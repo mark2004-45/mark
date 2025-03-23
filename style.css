@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family:  'Poppins', sans-serif;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;s
+height : 56px;
+padding: 10px 20px;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+cursor: pointer;
+}
+.left-section img{
+    width : 46%;
+    padding-left:16px;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+ margin-left:-9%;
+}
+.middle-section form{
+    display: flex;
+    height : 40px;
+    width :628px;
+}
+.middle-section input{
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+    padding: 12px;
+    font-size:1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+.middle-section button{
+ width: 40px;
+    height: 40px;
+    background-color: #f8f8f8; /* لون الخلفية */
+    border: 1px solid #d3d3d3; /* لون الإطار */
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+    .middle-section .mic{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    cursor: pointer;
+    }
+
+    .right-section a{
+         color: black;
+         padding-right:18px; 
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .content-area{
+        height: calc(100vh - 56px);
+        display: flex;
+        background-color: #f9f9f9;
+    }
+    aside{
+        height:100%;
+        width:260px;
+        background-color: #ffff;
+        overflow-y: auto;
+    }
+
+nav{
+     width:100%;
+display: flex;
+flex-direction: column ;
+margin: 15px 0 ;
+padding-right: 15px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;/* to remove under line*/
+    color:black;
+}
+.nav-link:hover{
+    background-color: rgba(0,0,0,0.05)
+}
+
+.nav-link span{
+    margin-left: 24px;/*بنزق */
+    font-size: 1.4rem;
+line-height:2em;
+font-weight: 400;
+color:#030303;
+}
+.active{
+    background-color: #e5e5e5;
+
+}
+   #active-span{
+font-weight: 500;
+}
+hr{
+    height: 1px;
+   background-color:#e5e5e5;
+    margin-left: 10px 0;
+    border: none;
+}
+nav p .material-icons-outlined {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 800;
+    margin:0px 10px 00px 15px;
+    padding:0px 0px 0px 5px
+    color :#606060;
+}
+nav p{
+    display: flex;
+    align-items: center;
+    margin-left:40px;
+    margin-top:10px;
+    font-weight: 800;
+    font-size: 15px;
+    color :#606060;text-transform: uppercase;
+}
+.iimg{
+    height: 24px;
+    width: 24px;
+    /* padding: 0px 5px 0px 0px; */
+    /* margin-left: 20px; */
+    border-radius: 100%
+}
+main{
+    width:100%;
+    height:100%;
+    padding: 35px 15px;
+    border-top:1px solid #ddd;
+    overflow-y: auto;
+}
+
+.videos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.video{
+    width: 330px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.thumbnail{
+width: 100%;
+height:187;
+margin-bottom: 40px;
+}
+.thumbnail img{
+    border-radius: 2.5%;
+    width: 100%;
+height:100%;
+}
+.video-details{
+    display: flex;
+    display: flex;
+    align-items: center; /* لمحاذاة الصورة مع النص في المنتصف */
+}
+.creater-img {
+    display: flex;
+    align-items: center;
+}
+.creater-img img{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+title{
+    display: flex;
+    flex-direction: column;
+}
+.title a{
+    display: flex;
+    text-decoration: none;
+    /* color:#030303; */
+}
+.videos-title{
+color:rgb(3,3,3);
+font-size: 1.6rem;
+max-width:276;
+font-weight: 500;
+line-height: 2.2rem;
+margin-bottom: 4px;
+overflow: hidden;
+display: -webkit -box;
+-webkit-line-clamp: 2;
+-webkit-box-orient:vertical;
+}
+.video-creater , title span{
+    color: rgb(96,96,96);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.video-creater:hover{
+    color:black;
+}
